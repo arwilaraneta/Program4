@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    double x, y, z;
+
+    // Get user input
+    std::cout << "Enter three numbers: ";
+    std::cin >> x >> y >> z;
+
+    // Find the largest number using the ternary operator
+    double largest = (x > y) * x + (y >= x) * y;  // Largest of x and y
+    largest = (largest > z) * largest + (z >= largest) * z; // Compare with z
+
+    // Display result
+    std::cout << "The largest number is: " << largest << std::endl;
+
+    return 0;
+}
