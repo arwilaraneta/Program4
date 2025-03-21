@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string name;
+    int birthYear;
+
+    // Ask for name and birth year
+    cout << "Enter your name: ";
+    getline(cin, name);
+
+    cout << "Enter your birth year: ";
+    cin >> birthYear;
+
+    // Get the current year
+    int currentYear = 2025; // You can replace this with a dynamic method to fetch the current year.
+    
+    // Calculate the age
+    int age = currentYear - birthYear;
+
+    // Display the name and age
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+
+    return 0;
+}
